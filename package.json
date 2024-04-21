@@ -1,0 +1,28 @@
+{
+  "name": "projeto-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prisma": "npx prisma generate --schema=src/prisma/schema.prisma",
+    "predev": "npx tsc",
+    "dev": "npx nodemon ./build/bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.2",
+    "@types/node-telegram-bot-api": "^0.64.3",
+    "nodemon": "^3.1.0",
+    "prisma": "^5.12.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.12.1",
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.65.1"
+  }
+}
